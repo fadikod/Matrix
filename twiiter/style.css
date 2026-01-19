@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.modal {
+  width: 420px;
+  background: white;
+  border-radius: 20px;
+  padding: 28px 48px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 28px;
+  margin-bottom: 12px;
+}
+
+h1 {
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 999px;
+  margin: 6px 0;
+  border: 1px solid #cfd9de;
+  background: white;
+    cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.dark {
+  background: #0f1419;
+  color: white;
+  border: none;
+}
+
+input {
+  width: 100%;
+  padding: 14px 12px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #cfd9de;
+  font-size: 15px;
+}
+
+.or {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.or::before,
+.or::after {
+  content: "";
+    flex: 1;
+  height: 1px;
+  background: #e1e8ed;
+}
+
+.signup {
+  margin-top: 28px;
+   font-size: 14px;
+  color: black;
+}
+
+.signup a {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
