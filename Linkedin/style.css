@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ddd;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: #0b919b 2px solid;
+  background: white;
+}
+
+.links a {
+  text-decoration: none;
+  color: #2a6ebb;
+  font-size: 14px;
+}
+
+.main {
+  background-color: #cfcfcf;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-window {
+  background-color: white;
+  width: 90%;
+  height: 80%;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left-side {
+  width: 60%;
+}
+
+.left-side h2 {
+  color: #0b919b;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.icon {
+  width: 36px;
+  margin-right: 10px;
+}
+
+.feature p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.right-side {
+  width: 28%;
+}
+
+.join-box {
+  width: 260px;
+  padding: 12px 15px;
+  border: 1px solid #c6dbe3;
+  border-radius: 4px;
+  background: #f9fcfd;
+}
+
+.join-box label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.join-box input[type="text"],
+.join-box input[type="email"] {
+  width: 100%;
+  padding: 4px;
+  margin-top: 2px;
+}
+
+.title {
+  background: linear-gradient(#6fb2d8, #3b7fb1);
+  color: white;
+  padding: 6px 10px;
+  margin: -12px -15px 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.submit-btn {
+  margin-top: 8px;
+  background: #8cc63f;
+  border: 1px solid #6aa62f;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.already {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.below {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.search-row input {
+  margin: 0 5px;
+}
+
+.directory {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+
+.footer {
+  width: 100%;
+  background: #f3f3f3;
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+  padding: 20px 0;
+}
+
+.footer-inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.footer-row p {
+  margin: 0;
+  width: 120px;
+  font-weight: bold;
+}
+
+.footer-row a,
+.footer a {
+  text-decoration: none;
+  color: #2a6ebb;
+}
+
+.footer-row a:hover,
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright-box {
+  margin-top: 15px;
+  font-size: 11px;
+  color: #666;
+}
