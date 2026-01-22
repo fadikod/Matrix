@@ -1,0 +1,152 @@
+<!DOCtype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Materialize</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+
+
+
+                  <style>
+                      @keyframes shake {
+                        0% { transform: translateX(0); }
+                        25% { transform: translateX(-4px); }
+                        50% { transform: translateX(4px); }
+                        75% { transform: translateX(-4px); }
+                        100% { transform: translateX(0); }
+                      }
+
+                      .shake {
+                        animation: shake 0.3s;
+                      }
+                      .buttons-wrap{
+                        display: flex;
+                        justify-content: center;
+                        gap: 200px;
+                      }
+                  </style>
+
+
+    </head>
+
+    <body>
+
+
+<nav class="nav-extended blue ">
+
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#test1">Test 1</a></li>
+        <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab"><a href="#test4">Test 4</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">JavaScript</a></li>
+  </ul>
+
+
+        <table class="highlight">
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+            <div class="section center buttons-wrap">
+              <a id="btnA" class="waves-effect waves-light btn-small">
+                <i id="icon" class="material-icons left">cloud</i>Dare to click me!!!!
+              </a>
+
+              <a id="btnB" class="waves-effect waves-light btn-small">
+                You did??
+              </a>
+            </div>
+
+          <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+          </script>
+
+          <script>
+                const btnA = document.getElementById("btnA");
+                  const btnB = document.getElementById("btnB");
+                  const icon = document.getElementById("icon");
+
+function swapIcon() {
+  // shake both buttons
+  btnA.classList.add("shake");
+  btnB.classList.add("shake");
+
+  setTimeout(() => {
+    btnA.classList.remove("shake");
+    btnB.classList.remove("shake");
+
+    // move the icon
+    if (btnA.contains(icon)) {
+      btnB.prepend(icon);
+
+      // change texts
+      btnA.lastChild.textContent = " Missed me?";
+      btnB.lastChild.textContent = " I have it now!";
+    } else {
+      btnA.prepend(icon);
+
+      // change texts back
+      btnA.lastChild.textContent = " I have it now!";
+      btnB.lastChild.textContent = " Missed me?";
+    }
+  }, 300);
+}
+
+
+                  btnA.addEventListener("click", swapIcon);
+                  btnB.addEventListener("click", swapIcon);
+                
+          </script>
+
+    </body>
+
+
+
+
+
+
+</html>
