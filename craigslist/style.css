@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.topbar {
+  background: #fff;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ccc;
+  white-space: nowrap;
+}
+
+.logo {
+  color: blue;
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block;
+  width: 20%;
+}
+
+.location {
+  display: inline-block;
+  background: #e6e6e6;
+  padding: 4px 12px;
+  width: 45%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.right {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+}
+
+.page {
+  padding: 12px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 18%;
+  vertical-align: top;
+  background: #e6e6e6;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+.column {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  margin-left: 1%;
+  background: #fff;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+h3 {
+  background: #ddd;
+  margin: 0 0 6px 0;
+  padding: 3px 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.searchbox {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.searchselect {
+  width: 70%;
+}
+
+.searchbtn {
+  width: 25%;
+}
+
+.email {
+  font-size: 12px;
+}
