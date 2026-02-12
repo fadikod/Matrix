@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+}
+
+#timer {
+  font-size: 64px;
+  margin: 20px 0;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.settings div {
+  width: 45%;
+}
+
+button {
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.controls button {
+  width: 100px;
+  margin: 5px;
+}
+
+span {
+  display: inline-block;
+  width: 30px;
+}
