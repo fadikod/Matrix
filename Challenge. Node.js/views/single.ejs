@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post</title>
+</head>
+
+<body>
+
+<h1><%= post.name %></h1>
+
+<p><%= post.message %></p>
+
+<p><%= post.createdAt.toDateString() %></p>
+
+<br>
+
+<a href="/feed/edit/<%= post._id %>">Edit Post</a>
+
+<br><br>
+
+<form action="/feed/delete/<%= post._id %>" method="POST">
+<button type="submit">Delete</button>
+</form>
+
+<br>
+
+<a href="/feed">Back</a>
+
+</body>
+</html>

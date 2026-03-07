@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Post</title>
+</head>
+
+<body>
+
+<h2>Edit Post</h2>
+
+<form action="/feed/update/<%= post._id %>" method="POST">
+
+<input type="text" name="name" value="<%= post.name %>" maxlength="15" required>
+
+<br><br>
+
+<textarea name="message" maxlength="40" required><%= post.message %></textarea>
+
+<br><br>
+
+<button type="submit">Update</button>
+
+</form>
+
+<br>
+
+<a href="/feed/<%= post._id %>">Cancel</a>
+
+</body>
+</html>
