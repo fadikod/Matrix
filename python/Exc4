@@ -15,3 +15,30 @@ random_answer= random.choice(answers)
 
 
 print("Magic 8-ball says:", random-answer)
+
+
+
+2-FIFO
+
+queue = []
+
+while True:
+    user_input = input("Enter something (or '?' to pop, Enter to quit): ")
+
+    # End program if user just presses Enter
+    if user_input == "":
+        print("Program ended.")
+        break
+
+    # If user enters '?'
+    elif user_input == "?":
+        if len(queue) > 0:
+            first_item = queue.pop(0)   # remove first element
+            print("Processed:", first_item)
+        else:
+            print("Queue is empty!")
+
+    # Otherwise, add to queue
+    else:
+        queue.append(user_input)
+        print("Added to queue:", user_input)
