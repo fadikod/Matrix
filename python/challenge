@@ -1,0 +1,100 @@
+total = 0
+
+for num in range(200, 2701):  # 2701 because range upper bound is exclusive
+    if (num % 3 == 0 or num % 5 == 0) and not (num % 3 == 0 and num % 5 == 0):
+        total += num
+
+print(total)
+
+
+
+
+
+  
+
+def rFib(n):
+    if n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return rFib(n - 1) + rFib(n - 2)
+
+
+# Example usage
+print(rFib(1))  # 0
+print(rFib(2))  # 1
+print(rFib(6))  # 5
+
+
+
+
+
+
+
+  def longest_word(text):
+    words = text.split()
+    longest = ""
+
+    for word in words:
+        if len(word) > len(longest):
+            longest = word
+
+    return longest
+
+
+# Example usage
+sentence = "The quick brown fox jumped over the lazy dog"
+print(longest_word(sentence))  # Output: jumped
+
+
+
+
+
+
+  import string
+
+def is_palindrome(text):
+    # Convert to lowercase
+    text = text.lower()
+
+    # Remove spaces and punctuation
+    cleaned = ""
+    for char in text:
+        if char.isalnum():  # keeps only letters and numbers
+            cleaned += char
+
+    # Reverse the string
+    reversed_text = cleaned[::-1]
+
+    # Compare
+    return cleaned == reversed_text
+
+
+# Example usage
+print(is_palindrome("kayak"))  # True
+print(is_palindrome("A man, a plan, a canal: Panama"))  # True
+print(is_palindrome("hello"))  # False
+
+
+
+
+
+
+
+
+
+
+
+  def remove_negative(arr):
+    result = []
+
+    for num in arr:
+        if num >= 0:
+            result.append(num)
+
+    return result
+
+
+# Example usage
+print(remove_negative([1, -2, 4, 1]))  # [1, 4, 1]
